@@ -50,6 +50,21 @@ python3 scanner.py
 python3 scanner.py
 Enter Target Network (e.g., 192.168.1.0/24): 172.31.0.0/24
 ```
+## Project Structure
+
+```text
+eth0Scanner/
+│
+├── scanner.py              # Main scanner script
+├── host_discovery.py       # Live host discovery (ARP/Ping)
+├── port_scanner.py         # TCP port scanning
+├── service_scan.py         # Service enumeration via Nmap
+├── report.py               # Generate JSON and CSV reports
+├── pretty_output.py        # Pretty CLI output (banners, tables)
+├── requirements.txt        # Python dependencies
+└── README.md               # Instructions
+```
+
 ### Disclaimer
 
 - **For authorized testing and educational purposes only.**
